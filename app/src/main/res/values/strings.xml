@@ -1,17 +1,9 @@
 <resources>
-    <string name="app_name">Lab2</string>
-    <string name="name">Name</string>
-    <string name="surname">Surname</string>
-    <string name="fathers_name">Father\'s name</string>
-    <string name="group_number">Group №</string>
-    <string name="faculty">Faculty</string>
-    <string name="ivan">ex. Ivan</string>
-    <string name="ivanov">ex. Ivanov</string>
-    <string name="ivanovich">ex. Ivanovich</string>
-    <string name="my_group_num">ex. 720601</string>
-    <string name="fitc">ex. FITC</string>
-
-    <string name="go_to_view1">Go to view 1</string>
-    <string name="go_to_view2">Go to view 2</string>
-    <string name="go_to_view3">Go to view 3</string>
+    <string name="app_name">Lab3</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="yellow">Yellow</string>
+    <string name="image">Image</string>
+    <string name="show_developers">Show developers</string>
 </resources>

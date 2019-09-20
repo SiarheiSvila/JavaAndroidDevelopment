@@ -6,97 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:onClick="goTo3"
-        android:text="@string/go_to_view3"
-        app:layout_constraintStart_toStartOf="@id/button"
-        app:layout_constraintTop_toTopOf="@id/button" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="600dp"
-        android:onClick="goTo2"
-        android:text="@string/go_to_view2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TableLayout
+    <LinearLayout
+        android:id="@+id/screenLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="215dp">
 
-        <TableRow
+        <Button
+            android:id="@+id/switchGreen"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/green" />
 
-            <TextView android:text="@string/name"></TextView>
-
-            <EditText
-                android:layout_width="152dp"
-                android:hint="@string/ivan"
-                android:inputType="text"
-                android:singleLine="true"></EditText>
-        </TableRow>
-
-        <TableRow
+        <Button
+            android:id="@+id/switchRed"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/red" />
 
-            <TextView android:text="@string/surname"></TextView>
-
-            <EditText
-                android:layout_width="152dp"
-                android:hint="@string/ivanov"
-                android:inputType="text"
-                android:singleLine="true"></EditText>
-        </TableRow>
-
-        <TableRow
+        <Button
+            android:id="@+id/switchBlue"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/blue" />
 
-            <TextView android:text="@string/fathers_name"></TextView>
-
-            <EditText
-                android:layout_width="152dp"
-                android:hint="@string/ivanovich"
-                android:inputType="textShortMessage"
-                android:singleLine="true"></EditText>
-        </TableRow>
-
-        <TableRow
+        <Button
+            android:id="@+id/switchImage"
             android:layout_width="match_parent"
-            android:layout_height="21dp">
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/image" />
 
-            <TextView android:text="@string/group_number"></TextView>
-
-            <EditText
-                android:layout_width="152dp"
-                android:hint="@string/my_group_num"
-                android:inputType="number"></EditText>
-        </TableRow>
-
-        <TableRow
+        <Button
+            android:id="@+id/switchYellow"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/yellow" />
 
-            <TextView android:text="@string/faculty"></TextView>
-
-            <EditText
-                android:layout_width="152dp"
-                android:autofillHints=""
-                android:hint="@string/fitc"
-                android:inputType="textShortMessage|text"></EditText>
-        </TableRow>
-
-    </TableLayout>
-
+        <Button
+            android:id="@+id/showDevelopers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showDevelopers"
+            android:text="@string/show_developers" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
