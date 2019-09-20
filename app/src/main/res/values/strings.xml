@@ -10,4 +10,8 @@
     <string name="ivanovich">ex. Ivanovich</string>
     <string name="my_group_num">ex. 720601</string>
     <string name="fitc">ex. FITC</string>
+
+    <string name="go_to_view1">Go to view 1</string>
+    <string name="go_to_view2">Go to view 2</string>
+    <string name="go_to_view3">Go to view 3</string>
 </resources>

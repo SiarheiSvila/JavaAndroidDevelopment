@@ -17,7 +17,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="160dp"
             android:onClick="goTo1"
-            android:text="Go to view 1"
+            android:text="@string/go_to_view1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/facultyRow" />
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="200dp"
             android:onClick="goTo3"
-            android:text="Go to view 3"
+            android:text="@string/go_to_view3"
             app:layout_constraintStart_toStartOf="@id/button3"
             app:layout_constraintTop_toTopOf="@id/button3" />
 
