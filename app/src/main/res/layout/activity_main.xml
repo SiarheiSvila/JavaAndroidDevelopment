@@ -4,20 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:onClick="goTo3"
+        android:text="Go to view 3"
+        app:layout_constraintStart_toStartOf="@id/button"
+        app:layout_constraintTop_toTopOf="@id/button" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="151dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="121dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="288dp"
-        android:onClick="onButtonClick"
-        android:text="@string/click_me"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="600dp"
+        android:onClick="goTo2"
+        android:text="Go to view 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="@string/name"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:hint="@string/ivan"
+                android:inputType="text"
+                android:singleLine="true"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="@string/surname"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:hint="@string/ivanov"
+                android:inputType="text"
+                android:singleLine="true"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="@string/fathers_name"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:hint="@string/ivanovich"
+                android:inputType="textShortMessage"
+                android:singleLine="true"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="21dp">
+
+            <TextView android:text="@string/group_number"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:hint="@string/my_group_num"
+                android:inputType="number"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="@string/faculty"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:autofillHints=""
+                android:hint="@string/fitc"
+                android:inputType="textShortMessage|text"></EditText>
+        </TableRow>
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

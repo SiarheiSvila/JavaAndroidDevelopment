@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="160dp"
+            android:onClick="goTo1"
+            android:text="Go to view 1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/facultyRow" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:onClick="goTo3"
+            android:text="Go to view 3"
+            app:layout_constraintStart_toStartOf="@id/button3"
+            app:layout_constraintTop_toTopOf="@id/button3" />
+
+        <TableRow
+            android:id="@+id/nameRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="127dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:text="@string/name"
+                android:textColor="#0A15B8"
+                android:textSize="20sp"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:hint="@string/ivan"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#BD1A1A"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/surnameRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="@id/nameRow"
+            app:layout_constraintStart_toStartOf="@id/nameRow"
+            app:layout_constraintTop_toTopOf="@id/nameRow">
+
+            <TextView
+                android:text="@string/surname"
+                android:textColor="#0A15B8"
+                android:textSize="20sp"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:hint="@string/ivanov"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#BD1A1A"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fathersRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="@id/nameRow"
+            app:layout_constraintStart_toStartOf="@id/nameRow"
+            app:layout_constraintTop_toTopOf="@id/surnameRow">
+
+            <TextView
+                android:text="@string/fathers_name"
+                android:textColor="#0A15B8"
+                android:textSize="20sp"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:hint="@string/ivanovich"
+                android:inputType="textShortMessage"
+                android:singleLine="true"
+                android:textColor="#BD1A1A"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/groupRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="@id/nameRow"
+            app:layout_constraintStart_toStartOf="@id/nameRow"
+            app:layout_constraintTop_toTopOf="@id/fathersRow">
+
+            <TextView
+                android:text="@string/group_number"
+                android:textColor="#0A15B8"
+                android:textSize="20sp"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:hint="@string/my_group_num"
+                android:inputType="number"
+                android:textColor="#BD1A1A"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/facultyRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="@id/nameRow"
+            app:layout_constraintStart_toStartOf="@id/nameRow"
+            app:layout_constraintTop_toTopOf="@id/groupRow">
+
+            <TextView
+                android:text="@string/faculty"
+                android:textColor="#0A15B8"
+                android:textSize="20sp"></TextView>
+
+            <EditText
+                android:layout_width="152dp"
+                android:autofillHints=""
+                android:hint="@string/fitc"
+                android:inputType="textShortMessage|text"
+                android:textColor="#BD1A1A"></EditText>
+        </TableRow>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

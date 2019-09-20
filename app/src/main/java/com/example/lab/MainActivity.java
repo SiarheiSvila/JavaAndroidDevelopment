@@ -13,11 +13,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onButtonClick(View view) {
-        setContentView(R.layout.hello_user);
+    public void goTo1(View view){
+        setContentView(R.layout.activity_main);
     }
 
-    public void goBack(View view) {
-        setContentView(R.layout.activity_main);
+    public void goTo2(View view){
+        setContentView(R.layout.view2);
+    }
+
+    public void goTo3(View view){
+        setContentView(R.layout.view3);
     }
 }
